@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: white;
+}
+
+
+/* Navigation */
+
+.navbar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.nav-link {
+    color: #333;
+    margin-left: 8px;
+}
+
+.nav-link:hover {
+    color: #0d6efd;
+}
+
+
+/* Home */
+
+.home {
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    background: #f3f7ff;
+}
+
+.intro-text {
+    color: #0d6efd;
+    font-size: 22px;
+}
+
+.home h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.home h3 {
+    color: #0d6efd;
+}
+
+.home p {
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.home .btn {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.profile-circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.profile-circle i {
+    color: white;
+    font-size: 110px;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 80px 0;
+}
+
+.grey-section {
+    background: #f5f6f8;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+
+/* Career objective */
+
+.objective {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* Education */
+
+.info-card {
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+    color: #0d6efd;
+    font-size: 40px;
+}
+
+.info-card h4 {
+    margin-top: 15px;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Skills */
+
+.skill-card {
+    background: white;
+    padding: 25px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h4 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    line-height: 1.6;
+}
+
+
+/* Project filters */
+
+.filter-area {
+    margin-bottom: 35px;
+}
+
+.filter-button {
+    border: 1px solid #0d6efd;
+    background: white;
+    color: #0d6efd;
+    padding: 8px 18px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    background: #0d6efd;
+    color: white;
+}
+
+
+/* Projects */
+
+.project-card {
+    background: white;
+    padding: 25px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.project-card i {
+    font-size: 35px;
+    color: #0d6efd;
+}
+
+.project-card h4 {
+    margin-top: 15px;
+}
+
+.project-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.project-tech {
+    margin-top: 15px;
+}
+
+.project-tech span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 15px;
+    background: #e9f1ff;
+    color: #0d6efd;
+    font-size: 13px;
+}
+
+
+/* Internship */
+
+.internship-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.internship-card h3 {
+    color: #0d6efd;
+}
+
+.internship-card p {
+    line-height: 1.7;
+}
+
+
+/* Certifications */
+
+.certificate-card {
+    background: white;
+    padding: 25px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.certificate-card i {
+    color: #0d6efd;
+    font-size: 35px;
+}
+
+.certificate-card p {
+    margin: 0;
+}
+
+
+/* Soft skills and interests */
+
+.soft-skills,
+.interest-list {
+    text-align: center;
+}
+
+.soft-skills span,
+.interest-list span {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 6px;
+    border-radius: 20px;
+    background: #e9f1ff;
+    color: #0d6efd;
+}
+
+
+/* Contact */
+
+.contact-box {
+    max-width: 850px;
+    margin: auto;
+}
+
+.contact-box form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-box label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.contact-box small {
+    display: block;
+    color: red;
+    margin-top: 5px;
+}
+
+.contact-details {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-details i {
+    color: #0d6efd;
+    margin-right: 8px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #18202c;
+    color: white;
+}
+
+footer p {
+    color: #ccc;
+}
+
+
+/* Dark mode */
+
+body.dark {
+    background: #171717;
+    color: white;
+}
+
+body.dark .navbar {
+    background: #222;
+}
+
+body.dark .nav-link {
+    color: white;
+}
+
+body.dark .home {
+    background: #202020;
+}
+
+body.dark .grey-section {
+    background: #1d1d1d;
+}
+
+body.dark .info-card,
+body.dark .skill-card,
+body.dark .project-card,
+body.dark .internship-card,
+body.dark .certificate-card,
+body.dark .contact-box form {
+    background: #292929;
+    color: white;
+}
+
+body.dark .info-card p,
+body.dark .project-card p {
+    color: #ccc;
+}
+
+body.dark .form-control {
+    background: #333;
+    color: white;
+    border-color: #555;
+}
+
+body.dark .form-control::placeholder {
+    color: #bbb;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    .home {
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home h3 {
+        font-size: 20px;
+    }
+
+    .profile-circle {
+        width: 180px;
+        height: 180px;
+        margin-top: 40px;
+    }
+
+    .profile-circle i {
+        font-size: 80px;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+
+}
